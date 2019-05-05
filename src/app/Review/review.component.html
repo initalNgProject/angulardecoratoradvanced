@@ -1,0 +1,10 @@
+<div style="border:1px solid blue">
+  {{Allreviews | json}} <br>
+  <b>comments</b>
+  <table>
+    <tr *ngFor="let x of Allreviews">
+      <td>{{x.name}}</td>
+      <td>{{x.review}}</td>
+    </tr>
+  </table>
+</div>
